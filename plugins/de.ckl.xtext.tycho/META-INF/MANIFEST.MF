@@ -1,0 +1,34 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: de.ckl.xtext.tycho
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: de.ckl.xtext.tycho; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext;visibility:=reexport,
+ org.eclipse.xtext.xbase;resolution:=optional;visibility:=reexport,
+ org.eclipse.xtext.generator;resolution:=optional,
+ org.apache.commons.logging;bundle-version="1.0.4";resolution:=optional,
+ org.eclipse.emf.codegen.ecore;resolution:=optional,
+ org.eclipse.emf.mwe.utils;resolution:=optional,
+ org.eclipse.emf.mwe2.launch;resolution:=optional,
+ org.eclipse.xtext.util,
+ org.eclipse.emf.ecore,
+ org.eclipse.emf.common,
+ org.antlr.runtime,
+ org.eclipse.xtext.common.types
+Import-Package: org.apache.log4j,
+ org.eclipse.xtext.xbase.lib
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: de.ckl.xtext.tycho,
+ de.ckl.xtext.tycho.services,
+ de.ckl.xtext.tycho.tycho,
+ de.ckl.xtext.tycho.tycho.impl,
+ de.ckl.xtext.tycho.tycho.util,
+ de.ckl.xtext.tycho.serializer,
+ de.ckl.xtext.tycho.parser.antlr,
+ de.ckl.xtext.tycho.parser.antlr.internal,
+ de.ckl.xtext.tycho.validation,
+ de.ckl.xtext.tycho.scoping,
+ de.ckl.xtext.tycho.generator,
+ de.ckl.xtext.tycho.formatting

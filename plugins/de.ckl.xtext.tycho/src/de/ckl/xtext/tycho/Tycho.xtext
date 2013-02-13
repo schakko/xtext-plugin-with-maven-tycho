@@ -1,0 +1,9 @@
+grammar de.ckl.xtext.tycho.Tycho with org.eclipse.xtext.common.Terminals
+
+generate tycho "http://www.ckl.de/xtext/tycho/Tycho"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';

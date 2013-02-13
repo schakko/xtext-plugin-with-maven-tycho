@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<relativePath>../../pom.xml</relativePath>
+		<groupId>de.ckl.xtext.tycho</groupId>
+		<artifactId>parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>de.ckl.xtext.tycho.p2updatesite</artifactId>
+	<version>1.0.0.qualifier</version>
+	<packaging>eclipse-repository</packaging>
+	<properties>
+		<!-- define a custom update site with "mvn -Dupdatesite.target=<pathtorepo>" -->
+		<updateSite.target>c:\temp</updateSite.target>
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.github.goldin</groupId>
+				<artifactId>copy-maven-plugin</artifactId>
+				<version>0.2.5</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<resource>
+								<directory>${project.build.directory}/repository</directory>
+								<targetPath>${updateSite.target}</targetPath>
+								<preservePath>true</preservePath>
+							</resource>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

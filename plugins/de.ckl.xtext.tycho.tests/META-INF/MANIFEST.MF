@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: de.ckl.xtext.tycho.tests
+Bundle-Vendor: Christopher Klein
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: de.ckl.xtext.tycho.tests
+Bundle-ActivationPolicy: lazy
+Require-Bundle: de.ckl.xtext.tycho,
+ de.ckl.xtext.tycho.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.xtext.junit4,
+ org.eclipse.ui.workbench;resolution:=optional,
+ org.eclipse.xtend.lib,
+ com.google.guava,
+ org.eclipse.xtext.xbase.lib
+Import-Package: org.apache.log4j,
+ org.hamcrest.core,
+ org.junit;version="4.5.0",
+ org.junit.runner;version="4.5.0",
+ org.junit.runner.manipulation;version="4.5.0",
+ org.junit.runner.notification;version="4.5.0",
+ org.junit.runners;version="4.5.0",
+ org.junit.runners.model;version="4.5.0",
+ org.mockito
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: de.ckl.xtext.tycho

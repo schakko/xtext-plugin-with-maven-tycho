@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/de.ckl.xtext.tycho.core.feature_1.0.0.qualifier.jar" id="de.ckl.xtext.tycho.core.feature" version="1.0.0.qualifier">
+      <category name="xtext_with_tycho"/>
+   </feature>
+   <feature url="features/de.ckl.xtext.tycho.test.feature_1.0.0.qualifier.jar" id="de.ckl.xtext.tycho.test.feature" version="1.0.0.qualifier">
+      <category name="xtext_with_tycho"/>
+   </feature>
+   <category-def name="xtext_with_tycho" label="Xtext"/>
+</site>

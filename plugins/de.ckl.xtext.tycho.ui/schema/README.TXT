@@ -1,0 +1,1 @@
+Plug-in schema definition goes here
